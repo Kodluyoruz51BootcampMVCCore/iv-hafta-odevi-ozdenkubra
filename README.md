@@ -63,6 +63,7 @@ else
     return String.Format("(\"{0}\") is neither null nor empty", s);
 }
 ```
+
 - [ ] Partial View nedir?
 
 - [ ] Farklı authentication bulup,aynı işleri farklı yollar ile yapanları araştırınız.
