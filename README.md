@@ -40,13 +40,34 @@ public ActionResult Index()
 	- http://www.kestrelblackmore.com/blog/jquery-datepicker-mvc4
 - [ ] First- FirstOrDefault ve Single- SingleOrDefault nedir? Aralarındaki farkı araştırınız.
 
-- [ ] En kısa null check nasıl yapılır?
+- [x] [En kısa null check nasıl yapılır?](https://docs.microsoft.com/tr-tr/dotnet/csharp/language-reference/operators/null-coalescing-operator)
+  - https://docs.microsoft.com/tr-tr/dotnet/api/system.string.isnullorempty?view=netcore-3.1
+	
+	
+``` 
 
+
+	string s1 = "abcd";
+string s2 = "";
+string s3 = null;
+
+Console.WriteLine("String s1 {0}.", Test(s1));
+Console.WriteLine("String s2 {0}.", Test(s2));
+Console.WriteLine("String s3 {0}.", Test(s3));
+
+String Test(string s)
+{
+if (String.IsNullOrEmpty(s))
+    return "is null or empty";
+else
+    return String.Format("(\"{0}\") is neither null nor empty", s);
+}
+```
 - [ ] Partial View nedir?
 
 - [ ] Farklı authentication bulup,aynı işleri farklı yollar ile yapanları araştırınız.
 
-- [ ] Razor Pages/MVC Projects karşılaştırmasını yapınız.
+- [x] [Razor Pages/MVC Projects karşılaştırmasını yapınız.](https://www.twilio.com/blog/introduction-asp-net-core-razor-pages)
 
 
 
